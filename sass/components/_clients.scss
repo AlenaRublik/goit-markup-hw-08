@@ -1,0 +1,35 @@
+.clients {
+    @extend %section;
+}
+
+.clients__title {
+    @extend %title;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-color);
+    border-radius: 4px;
+    color: var(--social-color);
+    transition: color var(--timing-function),
+    border-color var(--timing-function);
+    &:hover, &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+}
+
+.clients__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients__logo {
+    fill: currentColor;
+}
