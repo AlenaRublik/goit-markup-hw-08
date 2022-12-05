@@ -1,0 +1,128 @@
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+@media (min-width: $tablet) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.js-close-menu__icon, .js-open-menu__icon {
+   fill: currentColor; 
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: var(--primary-color);
+    z-index: 999;
+
+    transform: translateY(100%);
+    transition: transform var(--timing-function);
+}
+
+.menu-container.is-open {
+    transform: translateY(0);
+}
+
+.js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.mobile-menu {
+ margin-bottom: auto;
+  display: flex;
+  flex-direction:column;
+  gap: 32px;
+}
+
+.mobile-menu__link {
+    display: block;
+    // padding: 10px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    &--current {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-contacts {
+    display: flex;
+    flex-direction:column;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.mobile-contacts__item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--phone-color);
+
+    &:not(:last-child) {
+    font-size: 34px;
+    line-height: 1.18;
+    color: var(--accent-color);
+    }
+}
+
+.mobile-socials__item {
+position: relative;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+
+&:not(:last-child)::after {
+position: absolute;
+top: 50%;
+content: '';
+width: 22px;
+height: 1px;
+transform: rotate(90deg);
+background-color: var(--accent-color);
+}
+}
+
+
