@@ -1,6 +1,12 @@
 .address__item:not(:first-child) {
     margin-top: 9px;
+
+    @media screen and (max-width: $tablet) {
+    margin-top: 8px;
+    }
 }
+
+
 
 .address__link {
     font-style: normal;

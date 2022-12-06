@@ -44,13 +44,18 @@
     padding: 32px;
     background-color: var(--primary-color);
     z-index: 999;
-
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     transform: translateY(100%);
     transition: transform var(--timing-function);
 }
 
 .menu-container.is-open {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
 }
 
 .js-close-menu {
@@ -68,7 +73,6 @@
 
 .mobile-menu__link {
     display: block;
-    // padding: 10px;
     color: var(--main-color);
     text-decoration: none;
     font-weight: 500;

@@ -10,8 +10,31 @@
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: $tablet)and (max-width: 1199.98px) {
+    .footer__nav {
+        margin-left: 76px;
+    }
+}
+
 .footer__container {
     display: flex;
-    gap: 70px;
-    align-items: baseline;
+    // gap: 70px;
+    
+
+    @media screen and (max-width: 767.98px){
+        flex-direction: column;
+        text-align: center;
+       align-items: center;
+       gap:60px;
+    }
+
+     @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: baseline;
+    }
 }

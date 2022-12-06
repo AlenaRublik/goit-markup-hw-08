@@ -1,28 +1,79 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
-    height: 600px;
+   height: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: var(--primary-color);
     background-color: var(--hero-color);
-    background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
-        url('../images/header.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 600px;
+    }
+    
+        // Mobile screen
+        background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
+            url(../images/Hero/m@1x.jpg);
+    
+        // retina mobile screen
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
+                url(../images/Hero/m@2x.jpg);
+        }
+    
+        // Tablet screen
+        @media screen and (min-width: 481px) {
+            background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
+                url(../images/Hero/t@1x.jpg);
+    
+            // retina tablet screen
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
+                    url(../images/Hero/t@2x.jpg);
+            }
+        }
+    
+        // Desktop screen
+        @media screen and (min-width: 769px) {
+            background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
+                url(../images/Hero/d@1x.jpg);
+    
+            // retina desktop screen
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--layout-color), var(--layout-color)),
+                    url(../images/Hero/d@2x.jpg);
+            }
+        }
 }
 
 .hero__title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+   
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-color);
+
+    @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+    }
 }
 
 .hero__button {
@@ -30,11 +81,18 @@
     box-shadow: 0px 4px 4px var(--box-shadow-color);
     min-width: 216px;
     border-radius: 4px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
     letter-spacing: 0.06em;
     color: var(--primary-color);
+
+    @media screen and (min-width: $desktop) {
+        padding: 10px 32px;
+    }
 }
+
+
+

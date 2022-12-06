@@ -10,6 +10,11 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width:1199.98px) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
 }
 
 .modal-form__label {
