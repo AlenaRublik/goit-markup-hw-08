@@ -51,20 +51,53 @@
     <section class="examples section">
         <div class="container">
             <h2 class="visually-hidden">Наші роботи</h2>
-        <ul class="examples__list">
+        <!-- <ul class="examples__list">
             <li class="examples__item"><button type="button" class="examples__button button">Усі</button></li>
             <li class="examples__item"><button type="button" class="examples__button button">Веб-сайт</button></li>
             <li class="examples__item"><button type="button" class="examples__button button">Додатки</button></li>
             <li class="examples__item"><button type="button" class="examples__button button">Дизайн</button></li>
             <li class="examples__item"><button type="button" class="examples__button button">Маркетинг</button></li>
-        </ul>
+        </ul> -->
 
         <ul class="card-set">
             <li class="card-set__item">
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio.jpg" alt="Сторінка веб-сайту" width="370" height="294">
+
+                            <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x.jpg 1x,
+                                ./images/portfolio/d@2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x.jpg 1x,
+                                ./images/portfolio/t@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x.jpg 1x,
+                                ./images/portfolio/m@2x.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x.jpg"
+                                alt="Технокряк"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -86,7 +119,41 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio1.jpg" alt="Боскетболісті" width="370" height="294">
+
+                            <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x1.jpg 1x,
+                                ./images/portfolio/d@2x1.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x1.jpg 1x,
+                                ./images/portfolio/t@2x1.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x1.jpg 1x,
+                                ./images/portfolio/m@2x1.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x1.jpg"
+                                alt="Баскетболісти"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -109,7 +176,40 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio2jpg.jpg" alt="Риба" width="370" height="294">
+
+                             <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x2.jpg 1x,
+                                ./images/portfolio/d@2x2.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x2.jpg 1x,
+                                ./images/portfolio/t@2x2.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x2.jpg 1x,
+                                ./images/portfolio/m@2x2.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x2.jpg"
+                                alt="Риба"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -132,7 +232,40 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio3.jpg" alt="Комп'ютерні навушники" width="370" height="294">
+
+                             <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x3.jpg 1x,
+                                ./images/portfolio/d@2x3.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x3.jpg 1x,
+                                ./images/portfolio/t@2x3.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x3.jpg 1x,
+                                ./images/portfolio/m@2x3.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x3.jpg"
+                                alt="Комп'ютерні навушники"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -155,7 +288,40 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio4.jpg" alt="Дві коробки" width="370" height="294">
+
+                             <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x4.jpg 1x,
+                                ./images/portfolio/d@2x4.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x4.jpg 1x,
+                                ./images/portfolio/t@2x4.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x4.jpg 1x,
+                                ./images/portfolio/m@2x4.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x4.jpg"
+                                alt="Дві коробки"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -178,7 +344,40 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio5.jpg" alt="Сторінка веб-сайту" width="370" height="294">
+
+                             <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x5.jpg 1x,
+                                ./images/portfolio/d@2x5.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x5.jpg 1x,
+                                ./images/portfolio/t@2x5.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x5.jpg 1x,
+                                ./images/portfolio/m@2x5.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x5.jpg"
+                                alt="Сторінка веб-сайту"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -200,7 +399,40 @@
             <li class="card-set__item">
                 <article class="product"><a href="" class="product__link">
                     <div class="product__thumb">
-                        <img src="./images/portfolio6.jpg" alt="Журнал" width="370" height="294">
+
+                         <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x6.jpg 1x,
+                                ./images/portfolio/d@2x6.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x6.jpg 1x,
+                                ./images/portfolio/t@2x6.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x6.jpg 1x,
+                                ./images/portfolio/m@2x6.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x6.jpg"
+                                alt="Журнал"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                         <div class="product__overlay">
                             <p class="product__meta">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -222,7 +454,40 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio7.jpg" alt="Етикетка" width="370" height="294">
+
+                             <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x7.jpg 1x,
+                                ./images/portfolio/d@2x7.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x7.jpg 1x,
+                                ./images/portfolio/t@2x7.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x7.jpg 1x,
+                                ./images/portfolio/m@2x7.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x7.jpg"
+                                alt="Етикетка"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -244,7 +509,40 @@
                 <article class="product">
                     <a href="" class="product__link">
                         <div class="product__thumb">
-                            <img src="./images/portfolio8jpg.jpg" alt="Людина працює за ноутбуком" width="370" height="294">
+
+                             <picture>
+                            <source
+                                srcset="
+                                ./images/portfolio/d@1x8.jpg 1x,
+                                ./images/portfolio/d@2x8.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/t@1x8.jpg 1x,
+                                ./images/portfolio/t@2x8.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                type="image/jpg"
+                            />
+                            <source
+                                srcset="
+                                ./images/portfolio/m@1x8.jpg 1x,
+                                ./images/portfolio/m@2x8.jpg 2x
+                                "
+                                 media="(max-width: 767px)"
+                                 type="image/jpg"
+                            />
+                            <img
+                                class="product__image"
+                                src="./images/portfolio/m@1x8.jpg"
+                                alt="Людина працює за ноутбуком"
+                                width="450" height="404" loading="lazy"
+                            />
+                            </picture>
+
                             <div class="product__overlay">
                                 <p class="product__meta">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
