@@ -130,7 +130,26 @@
             <ul class="team__list">
                 <li class="team__item">
                     <article class="team-member">
-                        <img src="./images/img3.jpg" alt="чоловік у червоній сорочці та окулярах посміхається" width="270">
+
+                        <picture>
+                            <!-- Desktop screen -->
+                          
+                            <source media="(min-width: 1200px)" srcset="./images/team/d@1x.jpg 1x, ./images/team/d@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Tablet screen -->
+                            
+                            <source media="(min-width: 768px)"  srcset="./images/team/t@1x.jpg 1x, ./images/team/t@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Mobile screen -->
+                           
+                            <source media="(max-width: 767px)"  srcset="./images/team/m@1x.jpg 1x, ./images/team/m@2x.jpg 2x"
+                                type="image/jpg" />
+
+                            <img class="team-member__img" src="./images/team/m@1x.jpg" alt="чоловік у червоній сорочці та окулярах посміхається" width="450" height="460" loading="lazy" />
+                        </picture>
+
+                        
+
                         <div class="team-member__info">
                             <h3 class="team-member__name">Ігор Дем'яненко</h3>
                             <p class="team-member__post">Product Designer</p>
@@ -169,7 +188,23 @@
                 </li>
                 <li class="team__item">
                     <article class="team-member">
-                        <img src="./images/img4.jpg" alt="дівчина зі світлим волоссям посміхається" width="270">
+
+                        <picture>
+                            <!-- Desktop screen -->
+                        
+                            <source media="(min-width: 1200px)" srcset="./images/team/d@1x1.jpg 1x, ./images/team/d@2x1.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Tablet screen -->
+                        
+                            <source media="(min-width: 768px)" srcset="./images/team/t@1x1.jpg 1x, ./images/team/t@2x1.jpg 2x" type="image/jpg" />
+                            <!-- Mobile screen -->
+                        
+                            <source media="(max-width: 767px)" srcset="./images/team/m@1x1.jpg 1x, ./images/team/m@2x1.jpg 2x" type="image/jpg" />
+                        
+                            <img class="team-member__img" src="./images/team/m@1x1.jpg" alt="дівчина зі світлим волоссям посміхається"
+                                width="450" height="460" loading="lazy" />
+                        </picture>
+
                         <div class="team-member__info">
                             <h3 class="team-member__name">Ольга Рєпіна</h3>
                             <p class="team-member__post">Frontend Developer</p>
@@ -208,7 +243,23 @@
                 </li>
                 <li class="team__item">
                     <article class="team-member">
-                        <img src="./images/img5.jpg" alt="чоловік у білій сорочці посміхається" width="270">
+
+                        <picture>
+                            <!-- Desktop screen -->
+                        
+                            <source media="(min-width: 1200px)" srcset="./images/team/d@1x2.jpg 1x, ./images/team/d@2x2.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Tablet screen -->
+                        
+                            <source media="(min-width: 768px)" srcset="./images/team/t@1x2.jpg 1x, ./images/team/t@2x2.jpg 2x" type="image/jpg" />
+                            <!-- Mobile screen -->
+                        
+                            <source media="(max-width: 767px)" srcset="./images/team/m@1x2.jpg 1x, ./images/team/m@2x2.jpg 2x" type="image/jpg" />
+                        
+                            <img class="team-member__img" src="./images/team/m@1x2.jpg" alt="чоловік у білій сорочці посміхається"
+                                width="450" height="460" loading="lazy" />
+                        </picture>
+
                         <div class="team-member__info">
                             <h3 class="team-member__name">Микола Тарасов</h3>
                             <p class="team-member__post">Marketing</p>
@@ -247,7 +298,23 @@
                 </li>
                 <li class="team__item">
                     <article class="team-member">
-                        <img src="./images/img6.jpg" alt="чоловік у чорній футболці та окулярах посміхається" width="270">
+
+                        <picture>
+                            <!-- Desktop screen -->
+                        
+                            <source media="(min-width: 1200px)" srcset="./images/team/d@1x3.jpg 1x, ./images/team/d@2x3.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Tablet screen -->
+                        
+                            <source media="(min-width: 768px)" srcset="./images/team/t@1x3.jpg 1x, ./images/team/t@2x3.jpg 2x" type="image/jpg" />
+                            <!-- Mobile screen -->
+                        
+                            <source media="(max-width: 767px)" srcset="./images/team/m@1x3.jpg 1x, ./images/team/m@2x3.jpg 2x" type="image/jpg" />
+                        
+                            <img class="team-member__img" src="./images/team/m@1x3.jpg" alt="чоловік у чорній футболці та окулярах посміхається"
+                                width="450" height="460" loading="lazy" />
+                        </picture>
+
                         <div class="team-member__info">
                             <h3 class="team-member__name">Михайло Єрмаков</h3>
                             <p class="team-member__post">UI Designer</p>
@@ -525,6 +592,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    
+
 </body>
 </html>
