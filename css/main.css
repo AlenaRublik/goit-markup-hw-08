@@ -43,6 +43,7 @@
   .clients__title, .team__title, .activity__title {
     font-size: 28px;
     line-height: 1.18;
+    margin-bottom: 30px;
   }
 }
 
