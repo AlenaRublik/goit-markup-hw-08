@@ -3,14 +3,19 @@
     @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 30px;
     }
 }
 
 .card-set__item {
-
+@media screen and (max-width: 767.98px){
+&:not(:last-child) {
+margin-bottom: 30px;
+}
+}
 @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+flex-direction: column;
 flex-basis: calc((100% - 30px * (2 - 1)) / 2);
 }
 @media screen and (min-width: $desktop) {

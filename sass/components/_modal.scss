@@ -36,15 +36,15 @@
     @media screen and (max-width: 480px) {
     width: calc(100% - 30px);
     min-height: 609px;
-  }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    min-width: 450px;
-    min-height: 609px;
-  }
-  @media screen and (min-width: $tablet) {
-    min-width: 528px;
-    min-height: 581px;
-  }
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+        min-width: 450px;
+        min-height: 609px;
+    }
+    @media screen and (min-width: $desktop) {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal__close-button {

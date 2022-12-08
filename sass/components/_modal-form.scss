@@ -109,16 +109,18 @@
             gap: 10px;
             margin-bottom: 30px;
             margin-top: 20px;
-            font-size: 14px;
-            line-height: 1.71;
+            font-size: 12px;
+            line-height: 1.17;
             letter-spacing: 0.03em;
             color: var(--phone-color);
-    
+        @media screen and (min-width: $desktop) {
+                font-size: 14px;
+                line-height: 1.71;
+            }
         }
 }
 
 .modal-form__agreement-desc {
-    font-size: 14px;
     user-select: none;
     margin-left: 8px;
 }
@@ -126,6 +128,7 @@
 .modal-form__agreement-link {
     color: var(--accent-color);
     text-underline-offset: 2px;
+    text-decoration: underline;
 }
 
 

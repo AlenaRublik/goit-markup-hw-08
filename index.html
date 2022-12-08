@@ -102,18 +102,72 @@
             <h2 class="activity__title">Чим ми займаємося</h2>
         <ul class=" activity__list">
             <li class="activity__item"">
-                <img src="./images/img.jpg" alt="розробник пише код" width="370">
+
+                 <picture>
+                            <source
+                                srcset="
+                                ./images/activity/d@1x.jpg 1x,
+                                ./images/activity/d@2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            
+                            <img
+                                class="activity__image"
+                                src="./images/activity/d@1x.jpg"
+                                alt="розробник пише код"
+                                width="370" height="294" loading="lazy"
+                            />
+                </picture>
+
                 <div class="activity__overlay">
                     <p class="activity__text">Десктопні додатки</p>
                 </div>
             </li>
             <li class="activity__item">
-                <img src="./images/img1.jpg" alt="ux-дизайнер вибирає макет для програми" width="370">
+
+                <picture>
+                            <source
+                                srcset="
+                                ./images/activity/d@1x1.jpg 1x,
+                                ./images/activity/d@2x1.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            
+                            <img
+                                class="activity__image"
+                                src="./images/activity/d@1x1.jpg"
+                                alt="ux-дизайнер вибирає макет для програми"
+                                width="370" height="294" loading="lazy"
+                            />
+                </picture>
+
                 <div class="activity__overlay">
                     <p class="activity__text">Мобільні додатки</p>
                 </div>
             <li class="activity__item">
-                <img src="./images/img2.jpg" alt="ui-дизайнер дивиться на палітру кольорів" width="370">
+                
+                <picture>
+                            <source
+                                srcset="
+                                ./images/activity/d@1x2.jpg 1x,
+                                ./images/activity/d@2x2.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                type="image/jpg"
+                            />
+                            
+                            <img
+                                class="activity__image"
+                                src="./images/activity/d@1x2.jpg"
+                                alt="ui-дизайнер дивиться на палітру кольорів"
+                                width="370" height="294" loading="lazy"
+                            />
+                </picture>
+
                 <div class="activity__overlay">
                     <p class="activity__text">Дизайнерські рішення</p>
                 </div>
